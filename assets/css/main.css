@@ -1,0 +1,426 @@
+@import "../../app/components/rooms/room_templates/css/rooms_available.css";
+@import "../../app/components/rooms/room_templates/css/rooms_dirty.css";
+@import "../../app/components/rooms/room_templates/css/rooms_maintenance.css";
+@import "../../app/components/rooms/room_templates/css/rooms_checkout.css";
+@import "../../app/components/rooms/room_templates/css/rooms_booked.css";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Roboto Thin'; /*a name to be used later*/
+    src: url('fonts/Roboto-Thin.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Roboto Light'; /*a name to be used later*/
+    src: url('fonts/Roboto-Light.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Roboto Bold'; /*a name to be used later*/
+    src: url('fonts/Roboto-Bold.ttf'); /*URL to font*/
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-color: #f2f7f8;
+	height: 100%;
+	width: 100%;
+	overflow-y: scroll;
+}
+
+a {
+	color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:hover {
+	color: white;
+}
+
+a:visited {
+	color: white;
+}
+
+a:active {
+	color: white;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    background-color: white;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.fullWidth {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: initial;
+}
+
+.navigation-left {
+	position: fixed;
+	height: 85px;
+	background-color: #293134;
+	border-bottom: 1px solid #020202;
+}
+
+.navigation-right {
+	height: 85px;
+	background-color: #2b99d5;
+	border-bottom: 1px solid #005175;
+}
+
+.main_logo {
+	margin-left: 75px;
+	margin-top: 25px;
+}
+
+.navigation-left-column {
+	height: 85px;
+}
+
+.navigation-middle-column {
+	height: 85px;
+}
+
+.navigation-right-column {
+	height: 85px;
+}
+
+.checkin_btn {
+	cursor: pointer;
+	margin-left: 55px;
+	margin-right: 20px;
+	margin-top: 23px;
+	background-color: #005175;
+	width: 125px;
+	height: 40px;
+	border-radius: 13px;
+}
+
+.checkin_btn_text {
+	margin-top: 13px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Roboto Light';
+}
+
+.checkout_btn_text {
+	margin-top: 13px;
+	text-align: center;
+	color: #ffffff;
+	font-size: 16px;
+	font-family: 'Roboto Light';
+}
+
+.checkout_btn {
+	cursor: pointer;
+	background-color: #005175;
+	margin-top: 23px;
+	width: 125px;
+	height: 40px;
+	border-radius: 13px;
+}
+
+.profile_img {
+	margin-right: 50px;
+	margin-top: 16px;
+}
+
+.profile_name {
+	color: #dddddc;
+	font-size: 23px;
+	font-family: 'Roboto Light';
+	margin-right: 20px;
+	margin-top: 20px;
+}
+
+.profile_title {
+	font-family: 'Roboto Thin';
+	color: #e0e0df;
+	margin-top: 0px;
+	margin-right: 20px;
+	font-size: 18px;
+}
+
+.sidebar {
+	position: fixed;
+	height: 100%;
+	background-color: #1f272a;
+}
+
+.sidebar > a {
+	text-align: center;
+	display: block;
+	margin-top: 30px;
+	color: #dddddc;
+	font-size: 23px;
+	font-family: 'Roboto Light';
+}
+
+.view_title {
+	font-family: 'Roboto Thin';
+	color: #5b5b5b;
+	margin-top: 35px;
+	margin-left: 55px;
+	font-size: 50px;
+}
+
+#add-room-btn {
+	color: #818486;
+}
+
+.manage_rooms_col {
+	height: 500px;
+}
+
+.manage_rooms_heading_col {
+	height: 100px;
+	margin-bottom: 30px;
+}
+
+.manage_rooms_container {
+	margin-top: 45px;
+}
+
+#manage_rooms_heading {
+	margin-bottom: 25px;
+	margin-left: 0px;
+	margin-top: 35px;
+}
+
+.manage_rooms_update_price {
+	height: 300px;
+	width: 600px;
+	border: 1px solid #dee7e9;
+	background-color: #FFF;
+	margin-right: 30px;
+}
+
+.manage_rooms_change_price_curr_price {
+	font-family: 'Roboto Thin';
+	margin-left: 20px;
+	margin-top: 8px;
+	color: #96c94c;
+	font-size: 20px;
+}
+
+.finance_total_revenue_text {
+	font-family: 'Roboto Thin';
+	color: #96c94c;
+	font-size: 67px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+
+.finance_expenses_text {
+	font-family: 'Roboto Thin';
+	color: #f0585a;
+	font-size: 67px;
+	margin-top: 10px;
+	margin-left: 30px;
+}
+
+.manage_rooms_change_price_curr_price_type {
+	font-family: 'Roboto Thin';
+	margin-left: 30px;
+	margin-top: 10px;
+	color: #818486;
+	font-size: 20px;
+}
+
+.manage_rooms_update_price > img {
+	margin-bottom: 20px;
+	margin-top: 30px;
+	margin-left: 30px;
+}
+
+.change_room_price_btn {
+	margin-left: 30px;
+	margin-top: 30px;
+}
+
+.manage_rooms_change_price {
+	margin-top: 30px;
+	height: 300px;
+	width: 1230px;
+	border: 1px solid #dee7e9;
+	background-color: #FFF;
+	margin-right: 20px;
+}
+
+.manage_rooms_change_price_headline {
+	font-family: 'Roboto Thin';
+	margin-left: 20px;
+	margin-top: 40px;
+	color: #818486;
+	font-size: 25px;
+}
+
+.manage_rooms_container {
+	margin-left: 55px;
+}
+
+.rooms_add_rooms_btn {
+	font-family: 'Roboto Thin';
+	color: #818486;
+	margin-top: 42px;
+	margin-right: 20px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.rooms_status_available {
+	font-family: 'Roboto Thin';
+	color: #818486;
+	margin-top: 45px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+.rooms_status_img {
+	margin-top: 47px;
+	margin-right: 9px;
+}
+
+.rooms_manage_rooms_btn {
+	font-family: 'Roboto Thin';
+	color: #818486;
+	margin-top: 40px;
+	margin-right: 145px;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.rooms_manage_rooms_btn > a {
+	font-family: 'Roboto Thin';
+	color: #818486;
+	font-size: 25px;
+}
+
+.rooms_manage_rooms_btn > img {
+	height: 19px;
+	width: 19px;
+	margin-top: 3px;
+	margin-right: 10px;
+}
+
+.rooms_add_rooms_btn > img {
+	height: 19px;
+	width: 19px;
+	margin-top: 3px;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+img.rooms_add_rooms_btn_img.left {
+	margin-top: 6px;
+	height: 25px;
+	width: 25px;
+	margin-right: 13px;
+}
+
+.rooms_add_rooms_modal_title {
+	font-family: 'Roboto Thin';
+	color: #818486;
+	font-size: 37px;
+	margin-bottom: 50px;
+}
+
+.addroom_modal_form_room_number {
+	font-family: 'Roboto Bold';
+	color: #818486;
+	font-size: 19px;
+	margin-bottom: 15px;
+}
+
+.addroom_modal_form_room_desciption {
+	font-family: 'Roboto light';
+	color: #818486;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+
+#modal_input {
+	font-family: 'Roboto Light';
+	color: #6b6b6b;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.rooms {
+	margin-top: -25px;
+	margin-left: 55px;
+	margin-bottom: 35px;
+}
+
+.room {
+	margin-top: 30px;
+	margin-right: 50px;
+}
+
+.book_room_form_container {
+	margin-left: 55px;
+	margin-top: 55px;
+	padding-right: 55px;
+}
+

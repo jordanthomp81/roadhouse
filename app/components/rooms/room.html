@@ -1,0 +1,47 @@
+<div ng-controller="roomController" class="rooms_container">
+
+	<h1 class="view_title left">Rooms</h1>
+
+	<h1 class="rooms_manage_rooms_btn right"><img src="../../../assets/img/room_settings_icon.png"><a href="/manage-rooms">Manage Rooms</a></h1>
+
+	<h1 class="rooms_add_rooms_btn right"><img src="../../../assets/img/plus.png"><a id="add-room-btn" href="/addroom">Add Room</a></h1>
+
+	<h3 class="rooms_status_available right">{{under_maintenance}}</h3>
+	<img src="../../../assets/img/room_unavailable_img.png" class="rooms_status_img right"><h3 class="rooms_status_available right">
+
+	<h3 class="rooms_status_available right">{{dirty}}</h3>
+	<img src="../../../assets/img/room_dirty_img.png" class="rooms_status_img right"><h3 class="rooms_status_available right">
+
+	<h3 class="rooms_status_available right">{{available}}</h3>
+	<img src="../../../assets/img/room_available_img.png" class="rooms_status_img right"><h3 class="rooms_status_available right">
+
+	<div class="clearfix"></div>
+
+	<div class="clearfix"></div>
+
+	<div class="rooms left">
+
+		<div class="left" ng-repeat="(id, room) in rooms" ng-switch on="room.room_status">
+
+		    <div class="room left" ng-switch-when='AVAILABLE'><div ng-include src="'app/components/rooms/room_templates/available.html'"></div></div>
+
+		    <div class="room left" ng-switch-when='DIRTY'><div ng-include src="'app/components/rooms/room_templates/dirty.html'"></div></div>
+
+		    <div class="room left" ng-switch-when='UNDER MAINTENANCE'><div ng-include src="'app/components/rooms/room_templates/maintenance.html'"></div> </div>
+
+		    <div class="room left" ng-switch-when='BOOKED'><div ng-include src="'app/components/rooms/room_templates/booked.html'"></div> </div>
+
+		    <div class="room left" ng-switch-when='CHECKED IN'><div ng-include src="'app/components/rooms/room_templates/checkout.html'"></div></div>
+
+		</div>
+
+	</div>
+
+	<div class="clearfix"></div>
+
+	<script>
+
+	    
+  </script>
+
+</div>

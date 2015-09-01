@@ -1,0 +1,49 @@
+.room-booked {
+	width: 180px;
+	height: 215px;
+	border: 1px solid #dee7e9;
+	background-color: #FFF;
+	position: relative;
+}
+
+.room-booked-room-number {
+	color: #2b99d5;
+	font-size: 45px;
+	font-family: 'Roboto Thin';
+	margin-top: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.room-booked-room-status {
+	color: #869092;
+	font-size: 18px;
+	font-family: 'Roboto Light';
+	margin-top: 7px;
+	text-align: center;
+}
+
+.room-booked-room-name {
+	color: #97a6ab;
+	font-size: 18px;
+	font-family: 'Roboto Thin';
+	margin-top: 7px;
+	text-align: center;
+}
+
+.room-booked-book-btn {
+	position: absolute;
+	background-color: #45b1e0;
+	height: 50px;
+	width: 100%;
+	bottom: 0px;
+}
+
+.room-booked-book-btn-text {
+	text-align: center;
+	margin-top: 18px;
+	font-size: 20px;
+	font-family: 'Roboto Light';
+	color: #FFF;
+	cursor: pointer;
+}

@@ -1,0 +1,18 @@
+<h1 class="view_title">Book Room: {{currentRoom.room_number}}</h1>
+
+<form class="book_room_form_container">
+
+	<h3 class="addroom_modal_form_room_number">Guest Name</h3>
+		<input id="modal_input" name="book.room_guest_name" ng-model="book.room_guest_name" type="text" id="right-label" placeholder="" />
+
+	<h3 class="addroom_modal_form_room_number">Check In Date</h3>
+	<h3 class="addroom_modal_form_room_desciption">Format: dd/mm/yyyy</h3>
+		<input name="book.room_checkin_date" ng-model="book.room_checkin_date" id="modal_input" type="text" id="right-label" placeholder="" />
+
+	<h3 class="addroom_modal_form_room_number">Check Out Date</h3>
+	<h3 class="addroom_modal_form_room_desciption">Format: dd/mm/yyyy</h3>
+		<input name="book.room_checkout_date" ng-model="book.room_checkout_date" id="modal_input" type="text" id="right-label" placeholder="" />
+
+	<input ng-click="book_room_submit()" href="#" class="modal_submit button" value="Book">
+
+</form>

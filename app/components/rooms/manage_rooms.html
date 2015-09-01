@@ -1,0 +1,31 @@
+<h1 class="view_title">Manage Rooms</h1>
+
+<div class="manage_rooms_container">
+
+	<div class="manage_rooms_update_price left">
+		
+		<img class="left" src="../../../assets/img/creditcard.png" width="71px" height="52px">
+
+		<h3 class="left manage_rooms_change_price_headline">Room Prices</h3>
+
+		<div class="clearfix"></div>
+
+		<div ng-repeat="(key,val) in room_prices">
+
+			<h3 class="left manage_rooms_change_price_curr_price_type">{{key}}</h3>
+
+			<h3 class="left manage_rooms_change_price_curr_price">${{val}}</h3>
+
+			<div class="clearfix"></div>
+
+		</div>
+
+		<a href="/manage-rooms/price" class="change_room_price_btn button">Change</a>
+
+	</div>
+
+	<div class="manage_rooms_update_price left"></div>
+
+	<div class="manage_rooms_change_price left"></div>
+
+</div>

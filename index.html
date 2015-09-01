@@ -1,0 +1,89 @@
+<html ng-app="roadhouse">
+
+	<head>
+		<base href="/">
+		<link rel="stylesheet" href="assets/css/foundation.css" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    	<script src="assets/js/vendor/modernizr.js"></script>
+	</head>
+
+	<body>
+
+		<div class='navigation row fullWidth'>
+			
+			<div class="navigation-left large-2 medium-2 small-2 columns">
+				
+				<a href="/"><img class="main_logo" src="/assets/img/logo.png"></a>
+
+			</div>
+
+			<div class="navigation-right large-10 medium-10 small-10 columns">
+
+				<div class="navigation-left-column large-4 columns">
+					
+					<div class="checkin_btn left"><h3 class="checkin_btn_text"><a href="/checkin">CHECK IN</a></h3></div>
+
+					<div class="checkout_btn left"><h3 class="checkout_btn_text"><a href="/checkout">CHECK OUT</a></h3></div>
+
+				</div>
+
+				<div class="navigation-middle-column large-4 columns"></div>
+
+				<div class="navigation-right-column large-4 columns">
+
+					<img class="profile_img right" src="/assets/img/mock_user_img.png">
+
+					<h4 class="profile_name right">John Doe</h4><br /><br /><br />
+
+					<h4 class="profile_title right">Night Manager</h4>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class='row fullWidth'>
+			
+			<div class="sidebar large-2 medium-2 small-2 columns">
+				
+				<a href="/rooms">ROOMS</a>
+
+				<a href="/finances">FINANCES</a>
+
+			</div>
+
+			<div class="large-10 medium-10 small-10 columns">
+				
+				<ng-view></ng-view>
+
+			</div>
+
+		</div>
+
+		<!-- Angular JS Dependencies -->
+		<script src="assets/js/angular.min.js"></script>
+		<script src="assets/js/angular-route.min.js"></script>
+
+		<!-- JS Dependencies for This Project -->
+		<script src="app/app.module.js"></script>
+		<script src="app/app.routes.js"></script> 
+
+		<!-- Angular JS Controllers -->
+		<script src="app/components/rooms/roomController.js"></script>
+
+		<!-- Firebase JS Dependencies -->
+		<script src="assets/js/firebase.js"></script>
+
+		<!-- Foundation JS Dependencies -->
+		<script src="assets/js/vendor/jquery.js"></script>
+	    <script src="assets/js/foundation.min.js"></script>
+	    <script>
+	      $(document).foundation();
+	    </script>
+
+	    <!-- Jquery JS Dependencies -->
+		<script src="assets/js/sidebar-resize.js"></script>
+
+	</body>
+</html>

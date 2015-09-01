@@ -1,0 +1,22 @@
+<h1 class="view_title">Change Room Prices</h1>
+
+<form class="book_room_form_container">
+
+	<h3 class="addroom_modal_form_room_number">Room Size</h3>
+
+		<select name="room_prices_type" ng-model="room_prices_type" id="modal_input">
+
+          <option value="1 B / 1 Bath">1 B / 1 Bath</option>
+
+          <option value="2 B / 1 Bath">2 B / 1 Bath</option>
+
+          <option value="3 B / 1 Bath">3 B / 1 Bath</option>
+
+        </select>
+
+	<h3 class="addroom_modal_form_room_number">New Room Price</h3>
+		<input id="modal_input" name="room_prices_price" ng-model="room_prices_price" type="text" id="right-label" placeholder="$" />
+
+	<input ng-click="change_price_submit()" class="modal_submit button" value="Update"></a>
+
+</form>

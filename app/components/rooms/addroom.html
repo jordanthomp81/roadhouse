@@ -1,0 +1,29 @@
+<h1 class="view_title">Add Room</h1>
+
+<form class="book_room_form_container">
+
+	<h3 class="addroom_modal_form_room_number">Room Number</h3>
+		<input id="modal_input" name="add.room_number" ng-model="add.room_number" type="text" id="right-label" placeholder="#" />
+
+	<h3 class="addroom_modal_form_room_number">Room Status</h3>
+	<h3 class="addroom_modal_form_room_desciption">A = Available, D = Dirty, M = Under Mainenance</h3>
+		<input name="add.room_status" ng-model="add.room_status" id="modal_input" type="text" id="right-label" placeholder="" />
+
+	<h3 class="addroom_modal_form_room_number">Room Size</h3>
+
+		<select name="add.room_type" ng-model="add.room_type" id="modal_input">
+
+          <option value="1 B / 1 Bath">1 B / 1 Bath</option>
+
+          <option value="2 B / 1 Bath">2 B / 1 Bath</option>
+
+          <option value="3 B / 1 Bath">3 B / 1 Bath</option>
+
+        </select>
+
+	<h3 class="addroom_modal_form_room_number">Room Price</h3>
+		<input id="modal_input" name="add.room_price" ng-model="add.room_price" type="text" id="right-label" placeholder="$" />
+
+	<input type="submit" ng-click="add_room_form_submit()" href="#" class="modal_submit button" value="+ Add"></a>
+
+</form>

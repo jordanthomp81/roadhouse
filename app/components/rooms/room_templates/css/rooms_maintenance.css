@@ -1,0 +1,40 @@
+.room-maintenance {
+	width: 180px;
+	height: 215px;
+	border: 1px solid #dee7e9;
+	background-color: #FFF;
+	position: relative;
+}
+
+.room-maintenance-room-number {
+	color: #2b99d5;
+	font-size: 45px;
+	font-family: 'Roboto Thin';
+	margin-top: 25px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.room-maintenance-room-status {
+	color: #869092;
+	font-size: 18px;
+	font-family: 'Roboto Light';
+	margin-top: 7px;
+	text-align: center;
+}
+
+.room-maintenance-book-btn {
+	position: absolute;
+	background-color: #ddd351;
+	height: 40px;
+	width: 100%;
+	bottom: 0px;
+}
+
+.room-maintenance-book-btn-text {
+	text-align: center;
+	margin-top: 13px;
+	font-size: 18px;
+	font-family: 'Roboto Light';
+	color: #FFF;
+}
