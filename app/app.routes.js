@@ -5,11 +5,7 @@ angular.module('roadhouse')
       $routeProvider
 
           .when('/', {
-              templateUrl : 'https://github.com/jordanthomp81/roadhouse/blob/gh-pages/app/components/rooms/room.html',
-              controller : 'roomController',
-              controllerAs: 'room'
-          }).when('/roadhouse', {
-              templateUrl : '/app/components/rooms/room.html',
+              templateUrl : '/roadhouse/app/components/rooms/room.html',
               controller : 'roomController',
               controllerAs: 'room'
           }).when('/rooms', {
