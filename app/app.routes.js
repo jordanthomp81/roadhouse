@@ -4,7 +4,7 @@ angular.module('roadhouse')
 
       $routeProvider
 
-          .when('http://jordanthomp81.github.io/roadhouse/', {
+          .when('/roadhouse', {
               templateUrl : '/app/components/rooms/room.html',
               controller : 'roomController',
               controllerAs: 'room'
