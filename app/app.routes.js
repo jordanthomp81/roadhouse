@@ -4,48 +4,52 @@ angular.module('roadhouse')
 
       $routeProvider
 
-          .when('/roadhouse', {
-              templateUrl : '/app/components/rooms/room.html',
+          .when('/', {
+              templateUrl : '/roadhouse/app/components/rooms/room.html',
+              controller : 'roomController',
+              controllerAs: 'room'
+          }).when('/roadhouse', {
+              templateUrl : '/roadhouse/app/components/rooms/room.html',
               controller : 'roomController',
               controllerAs: 'room'
           }).when('/rooms', {
-              templateUrl : '/app/components/rooms/room.html',
+              templateUrl : '/roadhouse/app/components/rooms/room.html',
               controller : 'roomController',
               controllerAs: 'room'
           }).when('/manage-rooms', {
-              templateUrl : '/app/components/rooms/manage_rooms.html',
+              templateUrl : '/roadhouse/app/components/rooms/manage_rooms.html',
               controller : 'manageRoomsController',
               controllerAs: 'manage'
           }).when('/manage-rooms/price', {
-              templateUrl : '/app/components/rooms/price.html',
+              templateUrl : '/roadhouse/app/components/rooms/price.html',
               controller : 'manageRoomsController',
               controllerAs: 'manage'
           }).when('/checkin', {
-              templateUrl : '/app/components/rooms/checkin.html',
+              templateUrl : '/roadhouse/app/components/rooms/checkin.html',
               controller : 'navigationCheckInController',
               controllerAs: 'navcheckin'
           }).when('/checkout', {
-              templateUrl : '/app/components/rooms/checkout.html',
+              templateUrl : '/roadhouse/app/components/rooms/checkout.html',
               controller : 'navigationCheckOutController',
               controllerAs: 'navcheckout'
           }).when('/addroom', {
-              templateUrl : '/app/components/rooms/addroom.html',
+              templateUrl : '/roadhouse/app/components/rooms/addroom.html',
               controller : 'addRoomController',
               controllerAs: 'addroom'
           }).when('/book/:id', {
-              templateUrl : '/app/components/rooms/book.html',
+              templateUrl : '/roadhouse/app/components/rooms/book.html',
               controller : 'bookController',
               controllerAs: 'book'
           }).when('/checkin/:id', {
-              templateUrl : '/app/components/rooms/checkin.html',
+              templateUrl : '/roadhouse/app/components/rooms/checkin.html',
               controller : 'checkInController',
               controllerAs: 'checkin'
           }).when('/checkout/:id', {
-              templateUrl : '/app/components/rooms/checkout.html',
+              templateUrl : '/roadhouse/app/components/rooms/checkout.html',
               controller : 'checkOutController',
               controllerAs: 'checkout'
           }).when('/finances', {
-              templateUrl : 'app/components/finance/finance.html',
+              templateUrl : '/roadhouse/app/components/finance/finance.html',
               controller : 'financeController',
               controllerAs: 'finance'
           });
