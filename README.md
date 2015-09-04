@@ -1,3 +1,3 @@
 # roadhouse
 Capstone Project for NSS Front End
-http://jordanthomp81.github.io/roadhouse
+Check it out here: https://roadhouse.firebaseapp.com/
